@@ -10,7 +10,7 @@ let alarmMsg = document.getElementById("alarm-msg");
 
 let alarmTime = null;
 let alarmActive = false;
-let alarmSound = new Audio('audio/meow-billie-eilish.mp3');
+let alarmSound = new Audio('https://github.com/Somyakaushik/clock-utilities/blob/main/meow-billie-eilish.mp3');
 
 setInterval(() => {
     let currentTime = new Date();
@@ -21,7 +21,6 @@ setInterval(() => {
 
     if (alarmActive && alarmTime === `${currentTime.getHours()}:${currentTime.getMinutes()}`) {
         alarmMsg.innerHTML = "ALARM RINGING!";
-        alarmMsg.style.color = "#ff0000";
 
         if (alarmSound.paused) {
             alarmSound.play();
