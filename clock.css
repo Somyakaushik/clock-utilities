@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.content{
+.content {
     width: 100%;
     min-height: 100vh;
     background-color: blueviolet;
@@ -12,16 +12,16 @@
     position: relative;
 }
 
-.container{
+.container {
     width: 800px;
     height: 180px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.clock{
+.clock {
     width: 100%;
     height: 100%;
     background-color: rgb(121, 70, 198);
@@ -31,7 +31,7 @@
     justify-content: center;
 }
 
-.clock span{
+.clock span {
     font-size: 80px;
     width: 110px;
     display: inline-block;
@@ -39,7 +39,7 @@
     position: relative;
 }
 
-.clock span::after{
+.clock span::after {
     font-size: 15px;
     position: absolute;
     bottom: -5px;
@@ -47,15 +47,57 @@
     transform: translateX(-50%);
 }
 
-#hrs::after{
+#hrs::after {
     content: 'HOURS';
 }
 
-#min::after{
+#min::after {
     content: 'MINS';
 }
 
-#sec::after{
+#sec::after {
     content: 'SEC';
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .clock {
+        height: 150px;
+    }
+
+    .clock span {
+        font-size: 60px;
+        width: 90px;
+    }
+
+    #hrs::after, #min::after, #sec::after {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .clock {
+        height: 120px;
+    }
+
+    .clock span {
+        font-size: 40px;
+        width: 70px;
+    }
+
+    #hrs::after, #min::after, #sec::after {
+        font-size: 10px;
+    }
+}
