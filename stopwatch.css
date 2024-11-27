@@ -1,0 +1,41 @@
+body{
+    background-color: blueviolet;
+}
+
+h1{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    color: #FFF6E3;
+}
+
+main{
+    border: 2px solid #FFF6E3;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    color: #FFF6E3;
+}
+
+div p{
+    text-align: center;
+    font-size: 100px;
+}
+
+.nav{
+    text-align: center;
+}
+
+.stop, .start, .reset{
+    background-color: rgb(50, 200, 50);
+    border: 2px solid #FFF6E3;
+    border-radius: 8px;
+    color: #FFF6E3;
+    padding: 5px;
+    margin: 5px;
+}
+
+.stop:hover, .start:hover, .reset:hover {
+    background-color: rgb(40, 150, 40);
+    transform: scale(1.1);
+}

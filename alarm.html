@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+            <div class="alarm">
+                <h2>Set Alarm</h2>
+                <input type="number" id="alarm-hrs" placeholder="HH" min="0" max="23">
+                <input type="number" id="alarm-min" placeholder="MM" min="0" max="59">
+                <button id="set-alarm">Set Alarm</button>
+                <button id="stop-alarm" disabled>Stop Alarm</button> <!-- New Stop Alarm button -->
+                <p id="alarm-msg"></p>
+            </div>
+        </div>
+    </div>
+    <script src="alarm.js"></script>
+</body>
+</html>
