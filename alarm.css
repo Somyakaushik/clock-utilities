@@ -94,3 +94,67 @@
     font-size: 16px;
     color: #ff0;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .clock {
+        height: 150px;
+    }
+
+    .clock span {
+        font-size: 50px;
+        width: 80px;
+    }
+
+    #hrs::after, #min::after, #sec::after {
+        font-size: 12px;
+    }
+
+    .alarm input {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    .alarm button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    #alarm-msg {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+        height: 120px;
+    }
+
+    .clock span {
+        font-size: 40px;
+        width: 70px;
+    }
+
+    #hrs::after, #min::after, #sec::after {
+        font-size: 10px;
+    }
+
+    .alarm input {
+        width: 45px;
+        font-size: 12px;
+    }
+
+    .alarm button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    #alarm-msg {
+        font-size: 12px;
+    }
+}
